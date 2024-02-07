@@ -1,6 +1,6 @@
 #include "wholetab.h"
 #include "ui_wholetab.h"
-
+// 테스트 깃 테스트
 WholeTab::WholeTab(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::WholeTab)
