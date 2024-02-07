@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModelTab</class>
+ <widget class="QWidget" name="ModelTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>810</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>810</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ModelTab</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,8">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnMonth">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(11, 11, 11);
+border: 1px solid;
+border-color: rgb(143, 143, 143);</string>
+       </property>
+       <property name="text">
+        <string>월 선택</string>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDuration">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(11, 11, 11);
+border: 1px solid;
+border-color: rgb(143, 143, 143);</string>
+       </property>
+       <property name="text">
+        <string>기간 선택</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="minimumSize">
+      <size>
+       <width>810</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>810</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,3">
+         <property name="leftMargin">
+          <number>300</number>
+         </property>
+         <property name="rightMargin">
+          <number>300</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="mYear">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>2023년</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="mMonth">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>1월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>10월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>11월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>12월</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,3,1,5,3,3">
+         <property name="leftMargin">
+          <number>200</number>
+         </property>
+         <property name="rightMargin">
+          <number>200</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="dYearS">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>2023년</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="dMonthS">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>1월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>10월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>11월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>12월</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>~</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="dYearF">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>2023년</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="dMonthF">
+           <property name="styleSheet">
+            <string notr="true">border: 1.2px solid;
+border-color: rgb(150, 150, 150);</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>1월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>10월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>11월</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>12월</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnShow">
+           <property name="text">
+            <string>조회</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="dragDropOverwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::NoSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>34</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>모델</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>판매량</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>점유율</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnMonth</sender>
+   <signal>clicked()</signal>
+   <receiver>ModelTab</receiver>
+   <slot>btnMonthClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>-28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDuration</sender>
+   <signal>clicked()</signal>
+   <receiver>ModelTab</receiver>
+   <slot>btnDurationClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>808</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>-47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mMonth</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>ModelTab</receiver>
+   <slot>mMonthCurrentIndexChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>713</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnShow</sender>
+   <signal>clicked()</signal>
+   <receiver>ModelTab</receiver>
+   <slot>btnShowClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>529</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnMonthClicked()</slot>
+  <slot>btnDurationClicked()</slot>
+  <slot>mMonthCurrentIndexChanged(int)</slot>
+  <slot>btnShowClicked()</slot>
+ </slots>
+</ui>
